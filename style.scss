@@ -1022,6 +1022,18 @@ footer.showcase{
     .nav{
         justify-content: space-between;
     }
+    
+    .logo .nav-links{
+        display: none;
+    }
+
+    .all-microsoft{
+        display: none;
+    }
+    .right-nav #searchIcon2{
+        display: none;
+    }
+
     .nav-bar .menu{
         width: 7%;
     }
@@ -1167,6 +1179,17 @@ footer.showcase{
         justify-content: space-between;
     }
 
+    .logo .nav-links{
+        display: none;
+    }
+
+    .all-microsoft{
+        display: none;
+    }
+    .right-nav #searchIcon2{
+        display: none;
+    }
+
     .nav-bar .menu{
         width: 8%;
     }
@@ -1215,6 +1238,17 @@ footer.showcase{
 @media screen and (min-width: 415px) and (max-width: 539px){
     .nav{
         justify-content: space-between;
+    }
+
+    .logo .nav-links{
+        display: none;
+    }
+
+    .all-microsoft{
+        display: none;
+    }
+    .right-nav #searchIcon2{
+        display: none;
     }
 
     .nav-bar .menu{
