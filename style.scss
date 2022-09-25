@@ -1,0 +1,1241 @@
+
+$border: 1px solid red; 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "SegoeUI","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.nav-bar{
+    max-width: 100%;
+    height: 3.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    border-bottom: 1px solid rgb(235, 232, 232);
+
+    .menu{
+        width: 15%;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+    }
+    .logo{
+        width: 116px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2rem;
+
+        a{
+            text-decoration: none;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .right-nav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 35%;
+        gap: 0.5rem;
+    }
+    .nav-btn{
+        border: none;
+        outline: none;
+        padding: 0 0.5rem;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        #cartBtn{
+            margin-left: 2rem;
+        }
+        #listIcon{
+            font-size: 2rem;
+        }
+        #searchIcon,
+        #searchIcon2{
+            font-size: 1.1rem;
+            transform: rotateZ(90deg);
+            padding: 0.2rem;
+        }
+
+        #cartIcon{
+            font-size: 1.1rem;
+        }
+        #userIcon{
+            font-size: 2rem;
+        }
+    }
+}
+
+.showcase-image:first-child{
+    background: url(./media/Windows11SmallShowcase.jfif);
+    background-size: 200%;
+    background-position: right;
+    height: 30vh;
+    background-color: rgb(172, 182, 189);
+}
+.second .showcase-image{
+    background: url(./media/OneDriveShoawcase.jfif);
+    background-size: 100%;
+    background-position: right;
+    height: 30vh;
+    background-color: rgb(172, 182, 189);
+}
+
+
+.showcase-content{
+    background-color: rgb(59, 59, 59);
+    color: white;
+    height: 53vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    h3{
+        font-weight: 500;
+        margin-bottom: 0.2rem;
+    }
+
+    p{
+        font-weight: 400;
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .btn-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.second .showcase-content{
+    height: 53vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(235, 232, 232);
+    color: black;
+}
+
+.second .showcase-content{
+    margin-bottom: 3rem;
+}
+
+.btn{
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    padding: 0.62rem 1.2rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+    span{
+        text-align: center;
+        padding-bottom: 0.2rem;
+        transition: transform 0.2s;
+    }
+    i{
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 0.2rem;
+        transition: transform 0.2s;
+    }
+}
+
+.btn:hover i{
+    transform: translateX(20%);
+}
+
+.showcase-content .btn:hover span{
+    transform: translateX(-3%);
+}
+
+.btn.white{
+    background-color: white;
+    color: black;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn.black{
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.btn.blue{
+    color: rgb(76, 132, 179);
+    padding-left: 0;
+}
+
+.choose-shop-get{
+    width: 85%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 0 auto;
+    gap: 1.5rem;
+    div{
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+
+        i{
+            font-size: 1.2rem;
+        }
+        i#xboxIcon{
+            font-size: 1.2rem;
+        }
+
+        a{
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+h2{
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+.showcase-small{
+    width: 90%;
+    margin: 0 auto;
+
+    div{
+        margin-bottom: 3rem;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    h3{
+        font-weight: 500;
+        font-size: 1.1rem;
+        text-align: left;
+        margin-top: 0.5rem;
+        margin-bottom: 0.2rem;
+    }
+
+    p{
+        font-size: 0.97rem;
+    }
+
+    .btn-group{
+        flex-direction: row;
+    }
+}
+
+#follow{
+    display: flex;
+    gap: 1rem;
+    height: 2rem;
+    text-align: left;
+    width: 95%;
+    margin: 0 auto 3rem auto;
+
+    div:nth-child(2),
+    div:nth-child(3){
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+footer.showcase{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background-color: rgb(235, 232, 232);
+    height: auto;
+    ul{
+        margin-bottom: 3rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        h4{
+            color: rgb(59, 59, 59);
+            font-weight: 500;
+        }
+
+        li{
+            font-size: 0.75rem;
+            
+            a{
+                color: rgb(14, 14, 14);
+                text-decoration: none;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}
+#lastFooterUL{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1.8rem;
+    flex-wrap: wrap;
+    line-height: 0.5rem;
+    font-size: 0.7rem !important;
+    list-style: none;
+    gap: 0.8rem;
+    background-color: rgb(235, 232, 232);
+
+
+    a{
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    li p{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1660px) {
+    .nav-bar{
+        overflow: hidden;
+        padding: 0 7%;
+        border-bottom: none;
+    }
+
+    .menu{
+        display: none;
+    }
+    
+    .nav #searchIcon{
+        display: none;
+    }
+
+    .nav-bar .right-nav{
+        width: 40%;
+        display: flex;
+    }
+
+    .right-nav *{
+        cursor: pointer;
+    }
+
+    .nav > button:first-child{
+        display: none;
+    }
+
+    .nav .logo{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 1rem;
+        justify-content: left;
+    }
+
+    .nav .logo img{
+        width: 116px;
+    }
+
+    .nav-links ul{
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        gap: 1.2rem;
+    }
+    
+    .nav-links ul li a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .nav-links ul li:hover a{
+        border-bottom: solid 2px black;
+    }
+
+    .nav-links ul{
+        list-style: none;
+    }
+
+    .all-microsoft{
+        font-size: 0.8rem;
+        display: flex;
+        gap: 0.2rem;
+        align-items: center;
+        padding: 0.7rem 0;
+    }
+
+    .all-microsoft a{
+        text-align: left;
+        text-decoration: none;
+        color: #000;
+        border-bottom: 2px solid transparent;
+    }
+
+    .all-microsoft i{
+        font-size: 0.6rem;
+    }
+
+    .all-microsoft:hover a{
+        border-bottom: solid 2px black;
+    }
+
+    h2{
+        width: 0 8%;
+        text-align: left;
+        margin-left: 7%;
+    }
+
+    #follow{
+        margin-left: 7%;
+    }
+    .showcase{
+        padding: 0 7%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 47vh;
+
+        .showcase-image{
+            background-position: center;
+            background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWLAmj?ver=35aa&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=0&s=1898&d=712&aim=true);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 50vh;
+        }
+
+        .showcase-content{
+            text-align: left;
+            align-items: flex-start;
+            position: absolute;
+            width: 57%;
+            margin: 3rem;
+            background-color: transparent;
+            color: white;
+            height: 80%;
+            gap: 0.3rem;
+            justify-self: center;
+    
+            h3{
+                text-align: left;
+                font-size: 1.5rem;
+                width: 90%;
+            }
+    
+            p{
+                text-align: left;
+                width: 50%;
+            }
+        }
+    }
+
+    .showcase.second{
+        margin-bottom: 3rem;
+    }
+
+    .showcase.second .showcase-image{
+        background-size: 80%;
+        background-position: top;
+        background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3hFDE?ver=e113&q=0&m=8&h=472&w=1259&b=%23FFFFFFFF&l=f&x=0&y=187&s=2120&d=795&aim=true);
+        background-size: cover;
+        height: 50vh;
+    }
+
+    .showcase.second .showcase-content{
+        text-align: left;
+        align-items: flex-start;
+        position: absolute;
+        width: 60%;
+        margin: 2.5rem;
+        background-color: transparent;
+        height: 80%;
+        gap: 0.3rem;
+        justify-self: center;
+
+        h3{
+            text-align: left;
+            font-size: 1.5rem;
+            color: #000;
+        }
+
+        p{
+            text-align: left;
+            color: #000;
+        }
+    }
+    .showcase-small{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1.5rem;
+        padding: 0 2%;
+    }
+
+    .showcase-small div:hover img{
+        opacity: 0.9;
+    }
+
+    .btn-group{
+        flex-direction: row;
+
+        .btn.blue{
+            display: inline-flex;
+        }
+    }
+
+    .choose-shop-get{
+        height: 24vh;
+        flex-direction: row;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            height: 30%;
+            cursor: pointer;
+
+            i{
+                font-size: 2.2rem;
+            }
+
+            i#xboxIcon{
+                font-size: 2.5rem;
+                transform: translateY(-0.2rem);
+            }
+
+            a{
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+        div:hover a{
+            text-decoration: underline;
+        }   
+    }
+
+    footer.showcase{
+        display: grid;
+        width: 100%;
+        padding: 3% 7%;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    #lastFooterUL{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1085px) and (max-width: 1659px) {
+    .nav-bar{
+        overflow: hidden;
+        padding: 0 4%;
+        border-bottom: none;
+    }
+
+    .menu{
+        display: none;
+    }
+    
+    .nav #searchIcon{
+        display: none;
+    }
+
+    .nav-bar .right-nav{
+        width: 40%;
+        display: flex;
+    }
+
+    .right-nav *{
+        cursor: pointer;
+    }
+
+    .nav > button:first-child{
+        display: none;
+    }
+
+    .nav .logo{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 1rem;
+        justify-content: left;
+    }
+
+    .nav .logo img{
+        width: 116px;
+    }
+
+    .nav-links ul{
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        gap: 1.2rem;
+    }
+    
+    .nav-links ul li a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .nav-links ul li:hover a{
+        border-bottom: solid 2px black;
+    }
+
+    .nav-links ul{
+        list-style: none;
+    }
+
+    .all-microsoft{
+        font-size: 0.8rem;
+        display: flex;
+        gap: 0.2rem;
+        align-items: center;
+        padding: 0.7rem 0;
+    }
+
+    .all-microsoft a{
+        text-align: left;
+        text-decoration: none;
+        color: #000;
+        border-bottom: 2px solid transparent;
+    }
+
+    .all-microsoft i{
+        font-size: 0.6rem;
+    }
+
+    .all-microsoft:hover a{
+        border-bottom: solid 2px black;
+    }
+
+
+    .showcase{
+        padding: 0 4%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 47vh;
+
+        .showcase-image{
+            background-position: center;
+            background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWLAmj?ver=35aa&q=0&m=8&h=472&w=1259&b=%23FFFFFFFF&l=f&x=0&y=0&s=1898&d=712&aim=true);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 50vh;
+        }
+
+        .showcase-content{
+            text-align: left;
+            align-items: flex-start;
+            position: absolute;
+            width: 57%;
+            margin: 3rem;
+            background-color: transparent;
+            color: white;
+            height: 80%;
+            gap: 0.3rem;
+            justify-self: center;
+    
+            h3{
+                text-align: left;
+                font-size: 1.5rem;
+                width: 90%;
+            }
+    
+            p{
+                text-align: left;
+            }
+        }
+    }
+
+    .showcase.second{
+        margin-bottom: 3rem;
+    }
+
+    .showcase.second .showcase-image{
+        background-size: 80%;
+        background-position: right;
+        background: url(./media/OneDrive.jfif);
+        background-size: cover;
+        height: 50vh;
+    }
+
+    .showcase.second .showcase-content{
+        text-align: left;
+        align-items: flex-start;
+        position: absolute;
+        width: 60%;
+        margin: 2.5rem;
+        background-color: transparent;
+        height: 80%;
+        gap: 0.3rem;
+        justify-self: center;
+
+        h3{
+            text-align: left;
+            font-size: 1.5rem;
+            color: #000;
+        }
+
+        p{
+            text-align: left;
+            color: #000;
+        }
+    }
+    .showcase-small{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1.5rem;
+    }
+
+    .btn-group{
+        flex-direction: row;
+
+        .btn.blue{
+            display: inline-flex;
+        }
+    }
+
+    .choose-shop-get{
+        height: 24vh;
+        flex-direction: row;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            height: 30%;
+            cursor: pointer;
+
+            i{
+                font-size: 2.2rem;
+            }
+
+            i#xboxIcon{
+                font-size: 2.5rem;
+                transform: translateY(-0.2rem);
+            }
+
+            a{
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+        div:hover a{
+            text-decoration: underline;
+        }   
+    }
+    #follow{
+        margin-left: 4%;
+    }
+    #cancel-sub{
+        grid-column: span 2;
+    }
+    .btn.blue:last-child{
+        text-align: left;
+    }
+
+    footer.showcase{
+        display: grid;
+        width: 100%;
+        padding: 2% 4%;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    #lastFooterUL{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 860px) and (max-width: 1084px){
+    .nav-bar{
+        overflow: hidden;
+    }
+
+    .menu{
+        display: none;
+    }
+    
+    .nav #searchIcon{
+        display: none;
+    }
+
+    .nav-bar .right-nav{
+        width: 40%;
+        display: flex;
+    }
+
+    .right-nav *{
+        cursor: pointer;
+    }
+
+    .nav > button:first-child{
+        display: none;
+    }
+
+    .nav .logo{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: left;
+    }
+
+    .nav .logo img{
+        width: 116px;
+    }
+
+    .nav-links ul{
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        gap: 1.2rem;
+    }
+    
+    .nav-links ul li a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .nav-links ul li:hover a{
+        border-bottom: solid 2px black;
+    }
+
+    .nav-links ul{
+        list-style: none;
+    }
+
+    .all-microsoft{
+        font-size: 0.8rem;
+        display: flex;
+        gap: 0.2rem;
+        align-items: center;
+        padding: 0.7rem 0;
+    }
+
+    .all-microsoft a{
+        text-align: left;
+        text-decoration: none;
+        color: #000;
+        border-bottom: 2px solid transparent;
+    }
+
+    .all-microsoft i{
+        font-size: 0.6rem;
+    }
+
+    .all-microsoft:hover a{
+        border-bottom: solid 2px black;
+    }
+
+
+    .showcase{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 47vh;
+
+        .showcase-image{
+            background-size: 100%;
+            background-position: right;
+            background: url(./media/MSWIN11.jfif);
+            background-size: cover;
+            height: 50vh;
+        }
+
+        .showcase-content{
+            text-align: left;
+            align-items: flex-start;
+            position: absolute;
+            width: 57%;
+            margin: 3rem;
+            background-color: transparent;
+            color: white;
+            height: 80%;
+            gap: 0.3rem;
+            justify-self: center;
+    
+            h3{
+                text-align: left;
+                font-size: 1.5rem;
+                width: 90%;
+            }
+    
+            p{
+                text-align: left;
+            }
+        }
+    }
+
+    .showcase.second{
+        margin-bottom: 3rem;
+    }
+
+    .showcase.second .showcase-image{
+        background-size: 80%;
+        background-position: right;
+        background: url(./media/OneDrive.jfif);
+        background-size: cover;
+        height: 50vh;
+    }
+
+    .showcase.second .showcase-content{
+        text-align: left;
+        align-items: flex-start;
+        position: absolute;
+        width: 60%;
+        margin: 2.5rem;
+        background-color: transparent;
+        height: 80%;
+        gap: 0.3rem;
+        justify-self: center;
+
+        h3{
+            text-align: left;
+            font-size: 1.5rem;
+            color: #000;
+        }
+
+        p{
+            text-align: left;
+            color: #000;
+        }
+    }
+    .showcase-small{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+
+    .btn-group{
+        flex-direction: row;
+
+        .btn.blue{
+            display: inline-flex;
+        }
+    }
+
+    .choose-shop-get{
+        height: 24vh;
+        flex-direction: row;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            height: 30%;
+            cursor: pointer;
+
+            i{
+                font-size: 2.2rem;
+            }
+
+            i#xboxIcon{
+                font-size: 2.5rem;
+                transform: translateY(-0.2rem);
+            }
+
+            a{
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+        div:hover a{
+            text-decoration: underline;
+        }   
+    }
+    #follow{
+        margin-left: 4%;
+    }
+    #cancel-sub{
+        grid-column: span 2;
+    }
+    .btn.blue:last-child{
+        text-align: left;
+    }
+
+    footer.showcase{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #lastFooterUL{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 859px){
+    .nav{
+        justify-content: space-between;
+    }
+    .nav-bar .menu{
+        width: 7%;
+    }
+    .nav-bar .right-nav{
+        width: 15%;
+    }
+
+    .showcase{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 47vh;
+
+        .showcase-image{
+            background-size: 100%;
+            background-position: right;
+            background: url(./media/MSWIN11.jfif);
+            background-size: cover;
+            height: 50vh;
+        }
+
+        .showcase-content{
+            text-align: left;
+            align-items: flex-start;
+            position: absolute;
+            width: 57%;
+            margin: 3rem;
+            background-color: transparent;
+            color: white;
+            height: 80%;
+            gap: 0.3rem;
+            justify-self: center;
+    
+            h3{
+                text-align: left;
+                font-size: 1.5rem;
+                width: 90%;
+            }
+    
+            p{
+                text-align: left;
+            }
+        }
+    }
+
+    .showcase.second{
+        margin-bottom: 3rem;
+    }
+
+    .showcase.second .showcase-image{
+        background-size: 80%;
+        background-position: right;
+        background: url(./media/OneDrive.jfif);
+        background-size: cover;
+        height: 50vh;
+    }
+
+    .showcase.second .showcase-content{
+        text-align: left;
+        align-items: flex-start;
+        position: absolute;
+        width: 60%;
+        margin: 2.5rem;
+        background-color: transparent;
+        height: 80%;
+        gap: 0.3rem;
+        justify-self: center;
+
+        h3{
+            text-align: left;
+            font-size: 1.5rem;
+            color: #000;
+        }
+
+        p{
+            text-align: left;
+            color: #000;
+        }
+    }
+    .showcase-small{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+
+    .btn-group{
+        flex-direction: row;
+
+        .btn.blue{
+            display: inline-flex;
+        }
+    }
+
+    .choose-shop-get{
+        height: 24vh;
+        flex-direction: row;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            height: 30%;
+
+            i{
+                font-size: 2.2rem;
+            }
+
+            i#xboxIcon{
+                font-size: 2.5rem;
+                transform: translateY(-0.2rem);
+            }
+
+            a{
+                width: 80%;
+                text-align: center;
+            }
+        }
+    }
+
+    #follow{
+        margin-left: 4%;
+    }
+    #cancel-sub{
+        grid-column: span 2;
+    }
+    .btn.blue:last-child{
+        text-align: left;
+    }
+
+    footer.showcase{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #lastFooterUL{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 767px){
+    .nav{
+        justify-content: space-between;
+    }
+
+    .nav-bar .menu{
+        width: 8%;
+    }
+    .nav-bar .right-nav{
+        width: 20%;
+    }
+
+    .showcase .showcase-image{
+        height: 37.5vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .showcase.second .showcase-image{
+        height: 31.5vh;
+        background-size: 100%;
+        background-position: left;
+    }
+    .showcase .showcase-content,
+    .showcase.second .showcase-content{
+        height: 35vh;
+    }
+
+    .showcase-small{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;   
+    }
+    #cancel-sub{
+        grid-column: span 2;
+    }
+    .btn.blue:last-child{
+        text-align: left;
+    }
+
+    footer.showcase{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #lastFooterUL{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 539px){
+    .nav{
+        justify-content: space-between;
+    }
+
+    .nav-bar .menu{
+        width: 10%;
+    }
+    .nav-bar .right-nav{
+        width: 20%;
+    }
+
+    .showcase .showcase-image{
+        background-size: cover;
+        height: 35vh;
+    }
+    .showcase-content{
+        height: 40vh;   
+    } 
+    .btn-group{
+        flex-direction: row;
+
+        .btn.blue{
+            display: inline-flex;
+        }
+    }
+}
