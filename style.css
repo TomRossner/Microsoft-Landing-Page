@@ -152,7 +152,10 @@ body {
 }
 .btn span {
   text-align: center;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.2s;
 }
 .btn i {
